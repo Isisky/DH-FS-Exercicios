@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="form1">
+        <form id="formDados" action="" method="POST">
+            <label for="name">Nome</label><br>
+            <input type="text" value="" name="nome" id="name"><br>
+            <br>
+            <label for="surname">Sobrenome</label><br>
+            <input type="text" value="" name="sobrenome" id="surname"><br>
+            <br>
+            <label for="location">Local</label><br>
+            <input type="text" value="" name="local" id="location"><br>
+            <br>
+            <label for="pwd">Senha</label><br>
+            <input type="password" value="" name="senha" id="pwd"><br>
+            <br>
+            <label for="cpwd">Confirmar Senha</label><br>
+            <input type="password" value="" name="senha2" id="cpwd"><br>
+            <br>
+            <label for="gender">Gênero</label><br>
+            <select name="genero" id="gender">
+                <option value=""></option>
+                <option value="F">Feminino</option>
+                <option value="M">Masculino</option>
+                <option value="O">Outro</option><br>
+                
+            </select>
+            <br>
+            <label for="subscribe">Deseja receber notícias?</label>
+            <input type="checkbox" value="unchecked" name="subscribe" id="subscribe"><br>
+
+            <button type="reset">Limpar Campos</button>
+            <button type="submit" onclick=submitForm()>Submit</button>
+            <button onclick="hideForm()">Minimizar Formulário</button>
+            <br>
+        </form>
+    </div><br>
+    <script src="script.js"></script>
+</body>
+</html>
